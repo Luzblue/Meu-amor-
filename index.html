@@ -238,7 +238,20 @@ Eu te amo. ❤️
 ✨ 14/05 — o dia que começou a nossa história ✨
 </div>
 
-<button onclick="surpresa()">💖 Clique aqui, meu amor</button>
+<div class="segredo" onclick="mostrarSegredo()">
+✨ Um presente surpresa para você ✨
+</div> 
+    <div id="segredoTexto">
+
+Um presente surpresa para você… ❤️
+
+Eu amo cativar você e construir esse laço que é só nosso.
+
+Não importa quanto tempo passe, espero que cada momento continue tendo um significado especial.
+
+Porque algumas pessoas chegam na nossa vida e deixam de ser apenas uma pessoa… elas se tornam uma parte da nossa história. ✨
+
+    </div>
 
 <div id="surpresa">
 Meu amor, esse é só um pequeno pedaço do carinho que sinto por você.
@@ -288,7 +301,7 @@ Que a nossa história continue ganhando muitos capítulos. ❤️✨
     }
 }
 
-<style>
+</style>
 
 button{
     margin-top:20px;
@@ -301,7 +314,15 @@ button{
     cursor:pointer;
 }
 
-</style>
+<style>
+
+.segredo{
+    margin-top:25px;
+    padding:15px;
+    cursor:pointer;
+    color:#ffc1e3;
+    font-size:20px;
+    }
 
 button{
     margin-top:20px;
@@ -355,6 +376,11 @@ document.getElementById("surpresa").style.display="block";
     
 
 </script>
+    function mostrarSegredo(){
+
+document.getElementById("segredoTexto").style.display="block";
+
+    }
 
     </body>
 </html>
