@@ -201,3 +201,83 @@ document.body.appendChild(estrela);
 
 </body>
   </html>
+
+<!-- Coração interativo -->
+<div class="coracao" onclick="coracao()">❤️</div>
+
+<div id="mensagem">
+    Isa, você é uma das partes mais bonitas da minha história. ❤️
+</div>
+
+
+<style>
+
+.coracao {
+    font-size: 70px;
+    cursor: pointer;
+    margin-top: 30px;
+    animation: pulsar 1.5s infinite;
+}
+
+@keyframes pulsar {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+#mensagem {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    color: #ffd1e8;
+    font-size: 20px;
+}
+
+
+.chuva {
+    position: fixed;
+    top: -20px;
+    font-size: 25px;
+    animation: cair 5s linear forwards;
+}
+
+@keyframes cair {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+
+</style>
+
+
+<script>
+
+function coracao(){
+
+document.getElementById("mensagem").style.display="block";
+
+for(let i=0;i<20;i++){
+
+let c = document.createElement("div");
+
+c.className="chuva";
+c.innerHTML="❤️";
+
+c.style.left=Math.random()*100+"%";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+c.remove();
+},5000);
+
+}
+
+}
+
+</script>
