@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>2 Meses ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:radial-gradient(circle at top,#24113d,#080014);
+    color:white;
+    font-family:Georgia,serif;
+    overflow-x:hidden;
+}
+
+
+.star{
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    animation:brilho 2s infinite alternate;
+}
+
+
+@keyframes brilho{
+    from{
+        opacity:.3;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+.cadente{
+    position:fixed;
+    top:10%;
+    left:-150px;
+    width:130px;
+    height:2px;
+    background:linear-gradient(90deg,transparent,white);
+    transform:rotate(-35deg);
+    animation:passar 8s infinite;
+}
+
+
+@keyframes passar{
+    0%{
+        left:-150px;
+        opacity:0;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    50%{
+        left:110%;
+        opacity:0;
+    }
+
+    100%{
+        left:110%;
+        opacity:0;
+    }
+}
+
+
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    padding:40px 0;
+    text-align:center;
+    animation:aparecer 2s;
+}
+
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+
+h1{
+    color:#ffb6d9;
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+
+.carta{
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:25px;
+    line-height:1.8;
+    backdrop-filter:blur(5px);
+}
+
+
+h2{
+    color:#ffc1e3;
+    margin-bottom:15px;
+}
+
+
+.capitulo{
+    margin-bottom:35px;
+}
+
+
+.rosa{
+    font-size:70px;
+    margin:25px;
+    animation:balancar 3s infinite;
+}
+
+
+@keyframes balancar{
+    50%{
+        transform:rotate(5deg);
+    }
+}
+
+
+.coracao{
+    font-size:70px;
+    cursor:pointer;
+    margin:30px;
+    animation:pulsar 1.5s infinite;
+}
+
+
+@keyframes pulsar{
+    50%{
+        transform:scale(1.2);
+    }
+}
+
+
+#mensagem{
+    display:none;
+    margin:20px auto;
+    padding:20px;
+    max-width:500px;
+    background:rgba(255,255,255,.1);
+    border-radius:20px;
+}
+
+
+.chuva{
+    position:fixed;
+    top:-20px;
+    font-size:25px;
+    animation:cair 5s linear forwards;
+}
+
+
+@keyframes cair{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+
+.segredo{
+    margin-top:30px;
+    padding:15px;
+    color:#ffc1e3;
+    font-size:20px;
+    cursor:pointer;
+}
+
+
+#segredoTexto{
+    display:none;
+    margin-top:20px;
+    padding:20px;
+    background:rgba(255,255,255,.1);
+    border-radius:20px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cadente"></div>
+
+<div class="container">
+
+<h1>Para o amor da minha vida ❤️</h1>
+
+<p>Uma pequena surpresa feita com todo meu carinho 🌙✨</p>
+
+<div class="rosa">🌹</div>
+
+
+<div class="carta">
+
+<div class="capitulo">
+<h2>Capítulo 1 ✨</h2>
+
+<p>
+Meu amor, hoje são 2 meses de uma história que começou de um jeito que eu nunca imaginei.
+Entre conversas, risadas e pequenos momentos, você foi conquistando um espaço enorme no meu coração.
+</p>
+
+</div>
+
+
+<div class="capitulo">
+<h2>Capítulo 2 🌙</h2>
+
+<p>
+Mesmo com a distância, você conseguiu se tornar uma pessoa muito especial para mim.
+Cada conversa nossa tem um significado.
+</p>
+
+</div>
+<div class="capitulo">
+
+<h2>Capítulo 3 💌</h2>
+
+<p>
+Algumas pessoas chegam na nossa vida de um jeito inesperado e acabam se tornando especiais demais.
+Obrigado por cada conversa, cada sorriso e cada momento.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="coracao" onclick="coracao()">❤️</div>
+
+<div id="mensagem">
+Meu amor, você é uma das partes mais bonitas da minha história. ❤️
+</div>
+
+
+<div class="capitulo">
+
+<h2>Capítulo Final ❤️</h2>
+
+<p>
+Baby, nesses 2 meses eu descobri que a nossa história merece muitos capítulos.
+
+Que essa seja apenas uma pequena página de tudo que ainda vamos viver.
+
+Eu te amo. ❤️
+</p>
+
+</div>
+
+
+<div class="final">
+✨ 14/05 — o dia que começou a nossa história ✨
+</div>
+
+
+
+<div class="segredo" onclick="mostrarSegredo()">
+✨ Um presente surpresa para você ✨
+</div>
+
+
+<div id="segredoTexto">
+
+Um presente surpresa para você… ❤️
+
+Eu amo cativar você e construir esse laço que é só nosso.
+
+Não importa quanto tempo passe, espero que cada momento continue tendo um significado especial.
+
+Porque algumas pessoas chegam na nossa vida e deixam de ser apenas uma pessoa… elas se tornam uma parte da nossa história. ✨
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+for(let i = 0; i < 120; i++){
+
+let estrela = document.createElement("div");
+
+estrela.className="star";
+
+estrela.style.left=Math.random()*100+"%";
+estrela.style.top=Math.random()*100+"%";
+
+estrela.style.animationDelay=Math.random()*3+"s";
+
+document.body.appendChild(estrela);
+
+}
+
+
+
+function coracao(){
+
+document.getElementById("mensagem").style.display="block";
+
+
+for(let i=0;i<20;i++){
+
+let c=document.createElement("div");
+
+c.className="chuva";
+
+c.innerHTML="❤️";
+
+c.style.left=Math.random()*100+"%";
+
+document.body.appendChild(c);
+
+
+setTimeout(()=>{
+
+c.remove();
+
+},5000);
+
+
+}
+
+}
+
+
+
+function mostrarSegredo(){
+
+document.getElementById("segredoTexto").style.display="block";
+
+}
+
+
+</script>
+
+
+</body>
+</html>
