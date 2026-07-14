@@ -80,6 +80,19 @@ body {
     margin: auto;
     padding: 40px 0;
     text-align: center;
+    animation: aparecer 2s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -134,7 +147,8 @@ h2 {
 
 <div class="container">
 
-<h1>Para minha princesa ❤️</h1>
+<h1>Para o amor da minha vida ❤️</h1>
+<p>Uma pequena surpresa feita com todo meu carinho 🌙✨</p> 
 
 <div class="rosa">🌹</div>
 
@@ -204,7 +218,7 @@ document.body.appendChild(estrela);
 <div class="coracao" onclick="coracao()">❤️</div>
 
 <div id="mensagem">
-    Iamor, você é uma das partes mais bonitas da minha história. ❤️
+    amor, você é uma das partes mais bonitas da minha história. ❤️
 </div> <div class="capitulo">
 <h2>Capítulo Final ❤️</h2>
 
@@ -222,6 +236,13 @@ Eu te amo. ❤️
 
 <div class="final">
 ✨ 14/05 — o dia que começou a nossa história ✨
+</div>
+
+<button onclick="surpresa()">💖 Clique aqui, meu amor</button>
+
+<div id="surpresa">
+Meu amor, esse é só um pequeno pedaço do carinho que sinto por você.
+Que a nossa história continue ganhando muitos capítulos. ❤️✨
 </div>
 
 
@@ -267,7 +288,25 @@ Eu te amo. ❤️
     }
 }
 
-</style>
+</style> 
+    button{
+    margin-top:20px;
+    padding:15px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ffb6d9;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#surpresa{
+    display:none;
+    margin-top:20px;
+    padding:20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+}
 
 
 <script>
@@ -297,5 +336,11 @@ c.remove();
 }
 
 </script>
+    <button onclick="surpresa()">💖 Clique aqui, meu amor</button>
+
+<div id="surpresa">
+Meu amor, essa é só uma pequena prova do quanto você é especial para mim.
+Obrigado por fazer parte da minha história. ❤️✨
+</div>
     </body>
 </html>
